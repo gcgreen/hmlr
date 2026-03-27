@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>New Application (V2)</title>
+
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: #fafafa;
+        color: #333;
+    }
+
+    /* --- TOP NAV --- */
+    .top-nav {
+        background: #fff;
+        border-bottom: 1px solid #ddd;
+        display: flex;
+        align-items: center;
+        padding: 10px 20px;
+        justify-content: space-between;
+    }
+
+    .nav-left {
+        display: flex;
+        align-items: center;
+        gap: 25px;
+    }
+
+    .logo {
+        font-weight: bold;
+        color: #d35400;
+        font-size: 20px;
+    }
+
+    .nav-links a {
+        margin-right: 15px;
+        text-decoration: none;
+        color: #555;
+        font-size: 14px;
+        font-weight: bold;
+    }
+
+    .nav-right {
+        text-align: right;
+        font-size: 14px;
+    }
+
+    .nav-right .username {
+        font-weight: bold;
+    }
+
+    /* --- ORANGE CASE BAR --- */
+    .case-bar {
+        background: #f39c12;
+        color: #fff;
+        padding: 12px 20px;
+        font-size: 14px;
+    }
+
+    .breadcrumb {
+        margin-bottom: 5px;
+    }
+
+    .case-title {
+        font-weight: bold;
+        font-size: 16px;
+    }
+
+    .sub-info {
+        font-size: 12px;
+        opacity: 0.9;
+    }
+
+    /* --- ENVIRONMENT BANNER --- */
+    .banner {
+        background: #fff3cd;
+        color: #856404;
+        padding: 10px 20px;
+        font-size: 14px;
+        border-bottom: 1px solid #eedc82;
+    }
+
+    .banner a {
+        color: #d35400;
+        text-decoration: underline;
+    }
+
+    /* --- FORM CONTAINER --- */
+    .container {
+        width: 90%;
+        max-width: 900px;
+        margin: 30px auto;
+        background: #fff;
+        padding: 25px 30px;
+        border-radius: 5px;
+        box-shadow: 0 1px 3px #ddd;
+    }
+
+    h2 {
+        margin-top: 0;
+        color: #d35400;
+        font-size: 22px;
+    }
+
+    label {
+        display: block;
+        font-weight: bold;
+        margin-top: 20px;
+        margin-bottom: 5px;
+    }
+
+    .required {
+        color: red;
+    }
+
+    input, select {
+        width: 100%;
+        padding: 10px;
+        font-size: 14px;
+        border-radius: 4px;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+    }
+
+    /* --- TITLE NUMBER SECTION --- */
+    .title-row {
+        display: grid;
+        grid-template-columns: 1fr 1fr 60px 60px;
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+    .add-title-btn {
+        margin-top: 15px;
+        background: #2ecc71;
+        border: none;
+        padding: 8px 14px;
+        color: #fff;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 14px;
+    }
+
+    .remove-btn, .arrow-btn {
+        width: 100%;
+        padding: 10px;
+        border: none;
+        background: #eee;
+        cursor: pointer;
+        border-radius: 4px;
+        font-size: 16px;
+    }
+
+    /* --- NEXT BUTTON --- */
+    .next-btn {
+        margin-top: 30px;
+        float: right;
+        background: #f39c12;
+        color: #fff;
+        padding: 10px 18px;
+        border: none;
+        border-radius: 4px;
+        font-size: 14px;
+        cursor: pointer;
+    }
+
+</style>
+</head>
+
+<body>
+
+<!-- TOP NAV -->
+<div class="top-nav">
+    <div class="nav-left">
+        <div class="logo">Legal Law</div>
+        <div class="nav-links">
+            <a href="#">DASHBOARD</a>
+            <a href="#">REPORTS</a>
+            <a href="#">ACCOUNTS</a>
+            <a href="#">PEOPLE</a>
+            <a href="#">CASES</a>
+            <a href="#">DIARY</a>
+            <a href="#">SETUP</a>
+        </div>
+    </div>
+
+    <div class="nav-right">
+        <div class="username">Jo Peters</div>
+        <div>Legal Law • Profile • Sign out</div>
+    </div>
+</div>
+
+<!-- CASE BAR -->
+<div class="case-bar">
+    <div class="breadcrumb">Cases › 1234 Buckingh… › E‑Document Registration › <strong>New Application (V2)</strong></div>
+    <div class="case-title">1234 Buckingham Palace, LONDON, SW1A 1AA</div>
+    <div class="sub-info">#941989 • Purchase • Primary Client: Mrs. Gina Alright (gina@hoowla.com)</div>
+</div>
+
+<!-- ENVIRONMENT BANNER -->
+<div class="banner">
+    You are viewing this on a staging environment. Steps: [1], [2], [3], [4], [5], [6]  
+    Prefill: <a href="#">Charge</a>, <a href="#">Transfer</a>
+</div>
+
+<!-- FORM BODY -->
+<div class="container">
+    <h2>Step 1: Details</h2>
+
+    <label>Reference: <span class="required">*</span></label>
+    <input type="text" value="941989"/>
+
+    <label>Contact (you as the lodging conveyancer) <span class="required">*</span></label>
+    <select>
+        <option>Jo Peters – jo.peters@hoowla.com</option>
+    </select>
+
+    <label>Application Type: <span class="required">*</span></label>
+    <select>
+        <option>REGISTER UPDATE</option>
+    </select>
+
+    <h3 style="margin-top:30px;">Title Numbers</h3>
+
+    <div class="title-row">
+        <select>
+            <option>Whole</option>
+        </select>
+
+        <input type="text" placeholder="e.g. TGL654321" />
+
+        <button class="arrow-btn">↑</button>
+        <button class="remove-btn">X</button>
+    </div>
+
+    <label style="margin-top:15px;">
+        <input type="checkbox" /> Are there any disclosable overriding interests for the title
+    </label>
+
+    <button class="add-title-btn">+ ADD TITLE</button>
+
+    <button class="next-btn">NEXT ▶</button>
+</div>
+
+</body>
+</html>
