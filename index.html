@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>E‑Document Registration</title>
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: #fafafa;
+        color: #333;
+    }
+
+    /* --- TOP NAV --- */
+    .top-nav {
+        background: #fff;
+        border-bottom: 1px solid #ddd;
+        display: flex;
+        align-items: center;
+        padding: 10px 20px;
+        justify-content: space-between;
+    }
+
+    .nav-left {
+        display: flex;
+        align-items: center;
+        gap: 25px;
+    }
+
+    .nav-left .logo {
+        font-weight: bold;
+        color: #d35400;
+        font-size: 20px;
+    }
+
+    .nav-links a {
+        text-decoration: none;
+        color: #555;
+        font-size: 14px;
+        font-weight: bold;
+    }
+
+    .nav-right {
+        text-align: right;
+        font-size: 14px;
+    }
+
+    .nav-right .username {
+        font-weight: bold;
+    }
+
+    /* --- ORANGE BAR --- */
+    .case-bar {
+        background: #f39c12;
+        color: #fff;
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+
+    .breadcrumb {
+        margin-bottom: 5px;
+    }
+
+    .case-title {
+        font-weight: bold;
+        font-size: 16px;
+    }
+
+    .case-subtitle {
+        font-size: 12px;
+        opacity: 0.9;
+    }
+
+    /* --- ACTION BUTTONS --- */
+    .actions {
+        display: flex;
+        gap: 12px;
+        padding: 12px 20px;
+        background: #fff7ea;
+        border-bottom: 1px solid #e0e0e0;
+    }
+
+    .btn {
+        background: #f39c12;
+        color: #fff;
+        padding: 8px 14px;
+        font-size: 13px;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    /* --- CONTENT AREA --- */
+    .content {
+        text-align: center;
+        padding: 60px 20px;
+    }
+
+    .no-data {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    .tip {
+        font-size: 14px;
+        color: #777;
+    }
+
+    /* --- TABLE HEADER MOCK --- */
+    .table-header {
+        width: 90%;
+        margin: 20px auto 0 auto;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        font-weight: bold;
+        color: #777;
+        padding-bottom: 10px;
+        border-bottom: 1px solid #ddd;
+    }
+
+    /* --- FOOTER --- */
+    footer {
+        margin-top: 80px;
+        text-align: center;
+        font-size: 13px;
+        color: #888;
+    }
+
+</style>
+</head>
+
+<body>
+
+<!-- TOP NAV -->
+<div class="top-nav">
+    <div class="nav-left">
+        <div class="logo">Legal Law</div>
+        <div class="nav-links">
+            <a href="#">DASHBOARD</a>
+            <a href="#">REPORTS</a>
+            <a href="#">ACCOUNTS</a>
+            <a href="#">PEOPLE</a>
+            <a href="#">CASES</a>
+            <a href="#">DIARY</a>
+            <a href="#">SETUP</a>
+        </div>
+    </div>
+
+    <div class="nav-right">
+        <div class="username">Jo Peters</div>
+        <div>Legal Law • Profile • Sign out</div>
+    </div>
+</div>
+
+<!-- CASE AND BREADCRUMB BAR -->
+<div class="case-bar">
+    <div class="breadcrumb">Cases &gt; 1234 Buckingh… &gt; E‑Document Registration</div>
+    <div class="case-title">1234 Buckingham Palace, LONDON, SW1A 1AA</div>
+    <div class="case-subtitle">
+        #P34199 – Purchase – Primary Client: Mrs. Gina Alright (gina@hoowla.com)
+    </div>
+</div>
+
+<!-- ACTION BUTTONS -->
+<div class="actions">
+    <div class="btn">NEW APPLICATION (V2)</div>
+    <div class="btn">NEW SUBMISSION</div>
+    <div class="btn">PIPELINE</div>
+    <div class="btn">HELP</div>
+</div>
+
+<!-- TABLE HEADER -->
+<div class="table-header">
+    <div>Reference</div>
+    <div>Created Date</div>
+    <div>By</div>
+    <div>Status</div>
+    <div>Options</div>
+</div>
+
+<!-- MAIN CONTENT -->
+<div class="content">
+    <div class="no-data">No Submissions Found</div>
+    <div class="tip">
+        Tip: You can create a new eDRS submission by clicking the ‘+’ in the top right corner.
+    </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+    Terms &amp; Conditions &nbsp; Privacy Policy<br />
+    Copyright © Hoowla 2025
+</footer>
+
+</body>
+</html>
